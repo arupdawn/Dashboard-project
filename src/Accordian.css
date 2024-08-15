@@ -1,0 +1,78 @@
+.accordian-item {
+  margin-bottom: 10px;
+  display: flex;
+  font-family: 'Noto Sans', sans-serif;
+  /* align-items: flex-start; */
+}
+
+.accordian-open-close-section {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5px;
+  padding: 0px 10px;
+  width: 7px;
+}
+
+.dotted-lines {
+  border-left: 1px dashed black;
+  /* height: 10px; */
+  margin-left: 2px;
+}
+
+.open-close-icon > span {
+  font-size: 14px;
+}
+.collapsible-item {
+  border: 1px solid #4e7091;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin-right: 13px;
+}
+
+.collapsible-header {
+  background-color: #2c0060;
+  color: white;
+  padding: 7px 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.collapsible-header-open {
+  background-color: #ffffff;
+  color: #4e7091;
+  padding: 7px 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.collapsible-content {
+  background-color: #f4f6fc;
+  padding: 10px;
+  text-align: left;
+}
+
+.static-item {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+.static-item:hover {
+  background-color: #d6d6d6;
+}
