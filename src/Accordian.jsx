@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Accordian.css";
+import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
+import RemoveCircleOutlineOutlinedIcon from "@mui/icons-material/RemoveCircleOutlineOutlined";
 
 const Accordian = ({ workflowData }) => {
   const [isDatasetOpen, setIsDatasetOpen] = useState(false);
@@ -21,7 +23,11 @@ const Accordian = ({ workflowData }) => {
     <div className="accordian-item">
       <div className="accordian-open-close-section">
         <div className="open-close-icon">
-          {isDatasetOpen ? <span>&#x2212;</span> : <span>&#x2b;</span>}
+          {isDatasetOpen ? (
+            <RemoveCircleOutlineOutlinedIcon />
+          ) : (
+            <AddCircleOutlineOutlinedIcon />
+          )}
         </div>
 
         <div

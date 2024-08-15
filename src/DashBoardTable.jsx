@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Table,
   TableBody,
@@ -10,36 +10,31 @@ import {
   Select,
   MenuItem,
   IconButton,
-} from '@mui/material';
-import { samplejson } from './Dummy';
-import DeleteIcon from '@mui/icons-material/Delete';
-import FormControl from '@mui/material/FormControl';
+} from "@mui/material";
+import { samplejson } from "./Dummy";
+import DeleteIcon from "@mui/icons-material/Delete";
+import FormControl from "@mui/material/FormControl";
 
-const columnTypes = ['serial', 'int', 'float', 'object'];
+const columnTypes = ["serial", "int", "float", "object"];
 
 const DashBoardTable = () => {
-  // const handleTypeChange = (column, value) => {
-  //   // 
-  // };
-
-  // const handleDeleteColumn = (column) => {
-  //   // Logic to delete a column if needed
-  // };
-
   const jsonData = samplejson;
 
   return (
-    <TableContainer component={Paper} sx={{ width: '900px' }}>
+    <TableContainer
+      component={Paper}
+      sx={{ width: "930px", scrollbarWidth: "10px" }}
+    >
       <Table>
         <TableHead>
           <TableRow
             sx={{
-              'td, th': { borderRight: '1px solid #E3E4E5' },
+              "td, th": { borderRight: "1px solid #E3E4E5" },
 
               th: {
-                backgroundColor: '#F4F6FC',
-                borderTop: '1px solid #E3E4E5',
-                padding: '0px',
+                backgroundColor: "#F4F6FC",
+                borderTop: "1px solid #E3E4E5",
+                padding: "0px",
               },
             }}
           >
@@ -47,13 +42,13 @@ const DashBoardTable = () => {
               <TableCell key={index}>
                 <div
                   style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding: '1px 0px 1px 10px',
-                    fontWeight: '700',
-                    fontSize: '13px',
-                    borderBottom: '1px solid #E3E4E5',
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "1px 0px 1px 10px",
+                    fontWeight: "700",
+                    fontSize: "13px",
+                    borderBottom: "1px solid #E3E4E5",
                     fontFamily: '"Noto Sans", sans-serif',
                   }}
                 >
@@ -64,25 +59,24 @@ const DashBoardTable = () => {
                 </div>
                 <div
                   style={{
-                    padding: '5px 20px',
-                    display: 'flex',
-                    justifyContent: 'center',
+                    padding: "5px 20px",
+                    display: "flex",
+                    justifyContent: "center",
                   }}
                 >
                   <FormControl
                     sx={{
                       m: 1,
                       minWidth: 120,
-                      textTransform: 'capitalize',
+                      textTransform: "capitalize",
                     }}
                     size="small"
                   >
                     <Select
                       value={column?.type}
-                      // onChange={(e) => handleTypeChange(column, e.target.value)}
                       sx={{
-                        fontSize: '12px',
-                        fontWeight: '600',
+                        fontSize: "12px",
+                        fontWeight: "600",
                         fontFamily: '"Noto Sans", sans-serif',
                       }}
                     >
@@ -90,7 +84,7 @@ const DashBoardTable = () => {
                         <MenuItem
                           key={i}
                           value={type}
-                          sx={{ textTransform: 'capitalize', fontSize: '12px' }}
+                          sx={{ textTransform: "capitalize", fontSize: "12px" }}
                         >
                           {type}
                         </MenuItem>
@@ -107,13 +101,13 @@ const DashBoardTable = () => {
             <TableRow
               key={rowIndex}
               sx={{
-                'td, th': {
-                  borderRight: '1px solid #E3E4E5',
-                  borderTop: '1px solid #E3E4E5',
-                  padding: '7px 10px',
-                  fontWeight: '600',
+                "td, th": {
+                  borderRight: "1px solid #E3E4E5",
+                  borderTop: "1px solid #E3E4E5",
+                  padding: "7px 10px",
+                  fontWeight: "600",
                   fontFamily: '"Noto Sans", sans-serif',
-                  fontSize: '12px',
+                  fontSize: "12px",
                 },
               }}
             >

@@ -6,23 +6,24 @@
 }
 
 .accordian-open-close-section {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 5px;
   padding: 0px 10px;
-  width: 7px;
+  color: #3E0487;
+  /* width: 7px; */
 }
 
 .dotted-lines {
-  border-left: 1px dashed black;
+  border-left: 1px dashed #3E0487;
   /* height: 10px; */
-  margin-left: 2px;
+  margin-left: 8.5px;
 }
 
-.open-close-icon > span {
-  font-size: 14px;
+.open-close-icon > svg {
+  font-size: 18px;
 }
 .collapsible-item {
   border: 1px solid #4e7091;

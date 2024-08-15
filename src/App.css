@@ -7,7 +7,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
 }
 
@@ -36,7 +36,9 @@
 }
 
 .each-tabs {
-  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px 7px 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: 1px solid #e3e4e5;
@@ -50,11 +52,22 @@
   border-bottom-right-radius: 5px;
 }
 
+.each-tabs > label {
+  margin-left: 4px;
+}
+
 .download-button {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   padding: 7px 15px;
   border: 1px solid #e3e4e5;
   background-color: white;
+  color: #a9bcce;
+}
+
+.download-button > label {
+  margin-left: 4px;
 }
 
 /* Dashboard Table Section */
@@ -102,15 +115,21 @@
   border-radius: 5px;
   border: 1px solid #9c81de;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.header-info > div > label {
+  margin-left: 3px;
 }
 
 /* Workflow section */
 
 .dashboard-workflow-section {
   margin-left: 20px;
-  height: 415px;
+  height: 420px;
   border-radius: 5px;
-  width: 250px;
+  width: 265px;
   background-color: white;
   border: 1px solid #e3e4e5;
   overflow-y: auto;
@@ -127,4 +146,14 @@
 .workflow-header-section > label {
   color: #4b6b91;
   font-weight: 600;
+}
+
+.worflow-icons {
+  color: #f1189a;
+  display: flex;
+  align-items: center;
+}
+
+.worflow-icons > svg {
+  margin-left: 3px;
 }
